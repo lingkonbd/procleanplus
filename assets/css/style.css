@@ -88,7 +88,196 @@ p:last-child {
   color: rgb(41, 41, 41);
   font-size: 28px;
 }
+/* Hero area */
+.hero-content h2 {
+  font-weight: 700;
+  font-family: bai_jamjuree_semiboldregular;
+  font-size: 42px;
+  color: rgb(0, 0, 0);
+}
 
+.hero-content > p {
+  font-family: bai_jamjuree_lightregular;
+  color: rgb(49, 49, 49);
+  font-size: 22px;
+}
+.hero-btn .cta-btn {
+  margin-left: 0;
+  margin-top: 30px;
+  width: 360px;
+}
+
+.hero-btn p {
+  margin-top: 15px;
+  font-family: bai_jamjuree_lightregular;
+  font-size: 20px;
+  color: rgb(62, 62, 100);
+}
+
+.hero-btn {
+  margin: 30px 0 26px;
+  width: 360px;
+  text-align: center;
+  margin-left: 8px;
+}
+
+.hero-btn p a {
+  font-size: 24px;
+  font-weight: 700;
+  color: #3e3e64;
+  text-decoration: underline;
+}
+
+.hero-btn .cta-btn a {
+  width: 360px;
+}
+.hero-quote {
+  position: relative;
+}
+
+.hero-quote img {
+  position: absolute;
+  right: 0;
+}
+
+.hero-quote p {
+  font-size: 20px;
+  font-style: italic;
+  color: #26263f;
+  padding-right: 106px;
+}
+
+.hero-review {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: bai_jamjuree_lightregular;
+  font-size: 22px;
+  color: rgb(96, 96, 104);
+  font-style: italic;
+  margin-top: 20px;
+}
+.hero-review h4 {
+  margin-bottom: 2px;
+}
+
+.hero-review p {
+  font-size: 18px;
+}
+
+.hero-action {
+  text-align: center;
+}
+
+.hero-action img {
+  margin-bottom: 10px;
+}
+
+.hero-action .btn-primary {
+  display: block;
+  border-style: solid;
+  z-index: 89;
+  width: 170px;
+  height: 44px;
+  line-height: 44px;
+  background: rgba(19, 151, 216, 0);
+  color: #1397d8;
+  border-width: 1px;
+  border-color: #1397d8;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+.hero-area {
+  position: relative;
+  height: 780px;
+  overflow: hidden;
+}
+
+.hero-area .row.d-flex.align-items-center {
+  height: 780px;
+}
+
+.hero-img {
+  display: block;
+  background: rgba(255, 255, 255, 0);
+  background-image: url(../Images/herobg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-style: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+  border-radius: 0px;
+  width: 100%;
+  height: 780px;
+  position: absolute;
+  top: 0;
+}
+/* service details */
+.services-details {
+  position: relative;
+  overflow: hidden;
+}
+.single-services-img1 {
+  display: block;
+  background: rgba(255, 255, 255, 0);
+  background-image: url(../Images/process1.jpg);
+  /* background-image: url(../Images/process2.jpg); */
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-style: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+  border-radius: 0px;
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  top: 0;
+}
+/* .single-services-img1 {
+  background-image: url(../Images/process1.jpg);
+}
+.single-services-img2 {
+  display: block;
+  background: rgba(255, 255, 255, 0);
+  background-image: url(../Images/process1.jpg);
+  background-image: url(../Images/process2.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-style: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+  border-radius: 0px;
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  top: 0;
+} */
+.services-details .row.d-flex.align-items-center {
+  height: 500px;
+  position: relative;
+}
+
+.single-services h3 {
+  font-family: bai_jamjuree_semiboldregular;
+  font-size: 36px;
+  color: rgb(78, 78, 78);
+  line-height: 38px;
+}
+
+.single-services p {
+  font-family: bai_jamjuree_lightregular;
+  font-size: 22px;
+  color: rgb(38, 38, 63);
+  line-height: 34px;
+}
 /* testimonial area */
 .testimonial-review {
   display: flex;
@@ -162,6 +351,28 @@ p:last-child {
   justify-content: center;
 }
 /* work process area */
+.work-process-area.py-50 {
+  overflow: hidden;
+  position: relative;
+}
+.work-process-area.py-50 .row.d-flex.align-items-center {
+  position: relative;
+  height: 1100px;
+}
+.process-img {
+  display: block;
+  background: rgba(255, 255, 255, 0);
+  background-image: url(../Images/home.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 1100px;
+  position: absolute;
+  top: 0;
+}
 .process-title h2 {
   font-size: 48px;
   color: #222;
