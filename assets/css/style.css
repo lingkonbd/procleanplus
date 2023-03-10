@@ -53,3 +53,241 @@ p:last-child {
   margin: 0 auto;
   max-width: 1170px;
 }
+.btn-primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 252px;
+  height: 46px;
+  background: rgba(19, 151, 216, 1);
+  color: #fff;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  transition: all 0.3s ease 0s;
+}
+.py-50 {
+  padding: 50px 0;
+}
+.mt-30 {
+  margin-top: 30px;
+}
+/* Header area */
+.header-area {
+  padding: 10px 0;
+  background: rgba(255, 255, 255, 1);
+}
+.call-info span {
+  font-size: 24px;
+  text-align: center;
+  line-height: 29px;
+}
+.call-info a {
+  color: rgb(41, 41, 41);
+  font-size: 28px;
+}
+
+/* testimonial area */
+.testimonial-review {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.single-testimonial {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: rgba(245, 245, 248, 1);
+  border-style: none;
+  border-radius: 0px;
+  z-index: 24;
+  max-width: 540px;
+  max-height: 360px;
+  width: 540px;
+  height: 360px;
+  padding: 0 32px;
+  font-size: 20px;
+  font-style: italic;
+  color: #26263f;
+}
+
+.testimonial-area.py-50 {
+  position: relative;
+}
+
+.single-testimonial > img {
+  position: absolute;
+  right: -12px;
+  top: -19px;
+}
+
+.testimonial-review p {
+  margin-bottom: 0;
+  font-size: 16px;
+}
+
+/* clean work */
+.clean-btn {
+  display: block;
+  background: rgba(35, 78, 151, 1);
+  border-style: none;
+  border-radius: 0px;
+  width: 183px;
+  height: 57px;
+  position: relative;
+  font-family: bai_jamjuree_lightregular;
+  font-size: 22px;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  top: 25px;
+  left: -25px;
+}
+
+.clean-btn a {
+  background: rgba(19, 151, 216, 1);
+  border-style: none;
+  border-radius: 0px;
+  left: 8px;
+  top: 9px;
+  z-index: 96;
+  width: 188px;
+  height: 52px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* work process area */
+.process-title h2 {
+  font-size: 48px;
+  color: #222;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+.process-list {
+  display: flex;
+  align-items: start;
+}
+
+.process-list img {
+  margin-right: 15px;
+}
+
+.process-list-text h3 {
+  font-size: 26px;
+  font-weight: 700;
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.process-list-text h3:before {
+  content: "";
+  border-radius: 135px;
+  height: 8px;
+  width: 44px;
+  position: absolute;
+  z-index: 99;
+  background: #3e3e64;
+  bottom: -10px;
+  left: 0px;
+}
+
+.process-list-text {
+  margin-bottom: 35px;
+}
+
+.process-list p {
+  line-height: 38px;
+  font-family: bai_jamjuree_lightregular;
+  font-size: 20px;
+  color: rgb(78, 78, 78);
+}
+/* service-area */
+/* .service-area {
+  
+} */
+
+.single-service h4 {
+  font-size: 24px;
+  color: rgb(60, 60, 60);
+  line-height: 38px;
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.single-service {
+  padding-right: 10px;
+}
+/* cta area */
+.cta-area.py-50 {
+  text-align: center;
+}
+
+.cta-info a {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.cta-area h2 {
+  font-family: bai_jamjuree_lightregular;
+  font-size: 48px;
+  color: rgb(78, 78, 78);
+  font-weight: 700;
+  margin-bottom: 35px;
+}
+.cta-btn {
+  display: block;
+  background: rgba(35, 78, 151, 1);
+  border-style: none;
+  border-radius: 0px;
+  position: relative;
+  font-family: bai_jamjuree_lightregular;
+  font-size: 22px;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  width: 335px;
+  height: 56px;
+  margin: 0 auto;
+}
+.cta-btn a {
+  background: rgba(19, 151, 216, 1);
+  border-style: none;
+  border-radius: 0px;
+  right: 8px;
+  bottom: 9px;
+  z-index: 96;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 335px;
+  height: 56px;
+  font-size: 18px;
+}
+.cta-area p {
+  margin-top: 15px;
+  font-family: bai_jamjuree_lightregular;
+  font-size: 20px;
+  color: rgb(62, 62, 100);
+}
+
+.cta-area p a {
+  font-size: 24px;
+  font-weight: 700;
+  color: #3e3e64;
+  text-decoration: underline;
+}
+/* Footer area */
+.footer-area p {
+  display: block;
+  padding: 40px 0;
+  text-align: center;
+  font-size: 14px;
+  color: #888;
+  line-height: 0;
+  background-color: rgba(238, 238, 238, 1);
+}
