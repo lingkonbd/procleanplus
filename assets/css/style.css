@@ -91,6 +91,8 @@ a.btn-primary.mobile-btn {
 .call-info a {
   color: rgb(41, 41, 41);
   font-size: 28px;
+  text-decoration: underline;
+  margin-right: 12px;
 }
 /* Hero area */
 .hero-area {
