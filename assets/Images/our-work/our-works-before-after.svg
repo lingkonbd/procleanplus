@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="386" height="390" viewBox="0 0 386 390">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: #4aa9de;
+      }
+
+      .cls-1 {
+        opacity: 0.68;
+      }
+
+      .cls-2 {
+        opacity: 0.55;
+      }
+
+      .cls-3 {
+        opacity: 0.47;
+      }
+    </style>
+  </defs>
+  <circle id="Ellipse_1_copy" data-name="Ellipse 1 copy" class="cls-1" cx="189.5" cy="209.5" r="162.5"/>
+  <circle id="Ellipse_1_copy_3" data-name="Ellipse 1 copy 3" class="cls-2" cx="196.5" cy="180.5" r="162.5"/>
+  <circle id="Ellipse_1_copy_2" data-name="Ellipse 1 copy 2" class="cls-3" cx="178.5" cy="195.5" r="162.5"/>
+</svg>

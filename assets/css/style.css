@@ -930,6 +930,94 @@ footer.footer-area.roof-washing-footer {
   background: rgba(238, 238, 238, 1);
   padding: 27px;
 }
+/* pressure washing */
+/* our work */
+.work-title h2 {
+  font-family: Cabin;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 48px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-bottom: 95px;
+}
+.our-work-area {
+  padding: 50px 0 30px;
+}
+
+.single-work {
+  margin-bottom: 60px;
+  position: relative;
+}
+.single-work.single-work1 {
+  margin-top: 40px;
+}
+.single-work:before {
+  position: absolute;
+  content: "Before";
+  left: -38px;
+  top: -80px;
+  width: 140px;
+  height: 140px;
+  /* background: #000; */
+  background: url(../Images/our-work/our-works-before-after.svg) no-repeat
+    scroll center center/cover;
+  font-weight: 400;
+  font-family: "Luckiest Guy";
+  font-size: 28px;
+  color: rgb(255, 255, 255);
+  font-style: normal;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+}
+.single-work.single-work2:before {
+  content: "After";
+}
+.row.double-img .single-work.single-work2 {
+  margin-top: 110px;
+  margin-bottom: 0;
+}
+.out-work-btn.text-center {
+  background: url(../Images/our-work/our-work-btn-bg.svg) no-repeat scroll
+    center center/cover;
+  padding: 55px;
+  margin: 30px 0 0;
+}
+/* Our Power Washing Services */
+
+.single-washing-img {
+  width: fit-content;
+  position: relative;
+}
+
+.single-washing-img:before {
+  position: absolute;
+  left: -35px;
+  content: "";
+  top: -25px;
+  width: 90px;
+  height: 90px;
+  /* background: #333; */
+  background: url(../Images/our-work/our-works-before-after.svg) no-repeat
+    scroll center center/cover;
+  border-radius: 50%;
+}
+
+.single-washing-img:after {
+  position: absolute;
+  right: -35px;
+  content: "";
+  bottom: -25px;
+  width: 90px;
+  height: 90px;
+  /* background: #333; */
+  background: url(../Images/our-work/our-works-before-after.svg) no-repeat
+    scroll center center/cover;
+  border-radius: 50%;
+}
 /* Responsive */
 
 @media (min-width: 1200px) {
