@@ -52,7 +52,7 @@ p:last-child {
 .container {
   width: 100%;
   margin: 0 auto;
-  max-width: 1170px;
+  max-width: 1140px;
 }
 .btn-primary {
   display: inline-block;
@@ -487,7 +487,449 @@ footer.footer-area p {
   font-size: 14px;
   color: #888;
 }
+/* Roof washing */
+.roof-logo img {
+  width: 230px;
+}
 
+.roof-head-right .call-info span {
+  color: rgb(95, 101, 114);
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.roof-head-right .call-info {
+  text-align: center;
+}
+
+.roof-head-right .call-info a {
+  color: rgb(51, 51, 51);
+  font-family: Cabin;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 26px;
+  text-decoration: none;
+  margin-right: 0;
+}
+/* roof hero area */
+.roof-hero-area.d-flex.align-items-center {
+  padding: 95px 0 56px;
+  background: #ddd;
+}
+.roof-hero-content h2 {
+  font-family: Cabin;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 63px;
+  color: rgb(51, 51, 51);
+  line-height: 1;
+}
+.roof-hero-content > p {
+  font-family: Cabin;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 26px;
+  color: rgb(25, 25, 25);
+  line-height: 32px;
+  margin: 40px 0;
+}
+
+.hero-list p {
+  position: relative;
+  font-weight: 500;
+  font-family: Cabin;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  margin-bottom: 13px;
+  padding-left: 30px;
+}
+
+.hero-list p:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: #333;
+  /* background: url(../Images/roof-washing/list-circle.svg); */
+  border-radius: 50%;
+}
+
+.hero-list {
+  margin-top: 30px;
+}
+.roof-washing-form {
+  background: #f7f7f7f7;
+  padding: 20px 30px;
+  position: relative;
+  z-index: 999;
+  max-width: 410px;
+  width: 100%;
+  margin-left: auto;
+}
+.roof-washing-form:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  z-index: -1;
+  transform: rotate(-2deg);
+}
+.roof-washing-form p {
+  font-weight: 600;
+  font-family: Cabin;
+  font-size: 18px;
+  color: rgb(51, 51, 51);
+  font-style: normal;
+}
+
+.form-group lavel {
+  font-family: Cabin;
+  font-weight: 700;
+  font-size: 29px;
+  line-height: 19px;
+  color: #000;
+}
+
+.roof-washing-form .form-group label {
+  font-family: Cabin;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 19px;
+  color: #000;
+}
+
+.roof-washing-form .form-group input {
+  height: 48px;
+  font-size: 15px;
+  line-height: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 1px solid #000;
+  border-radius: 0;
+}
+
+.roof-washing-form .form-group {
+  margin-bottom: 15px;
+}
+
+.roof-washing-form .form-group .form-select {
+  height: 48px;
+  font-size: 15px;
+  line-height: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 1px solid #000;
+  border-radius: 0;
+}
+input.roof-btn {
+  display: inline-block;
+  border-radius: 0;
+  width: 100%;
+  height: 66px;
+  line-height: 66px;
+  background: rgba(247, 147, 29, 1);
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: Cabin;
+  text-align: center;
+  border: transparent;
+}
+.submitform label {
+  text-align: center;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(137, 137, 137);
+}
+/* show for yourself */
+.roof-section-title h2 {
+  text-align: center;
+  font-family: Cabin;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 36px;
+  color: rgb(0, 0, 0);
+}
+
+.single-work.see-it-item img {
+  width: 100%;
+  height: 300px;
+}
+.single-work.see-it-item .see-it-btn a {
+  font-weight: 700;
+  font-family: "Luckiest Guy";
+  font-size: 28px;
+  color: rgb(255, 255, 255);
+  font-style: normal;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.see-it .roof-section-title {
+  margin-bottom: 100px;
+}
+.single-work.see-it-item .see-it-btn {
+  position: absolute;
+  background: url(../Images/roof-washing/circle-before-after.svg);
+  height: 150px;
+  width: 150px;
+  text-align: center;
+  border-radius: 50%;
+  left: -10px;
+  top: -83px;
+}
+
+.single-work.see-it-item {
+  position: relative;
+}
+
+.washing-process .roof-section-title {
+  margin-bottom: 60px;
+}
+
+.single-washing-process h3 {
+  font-family: Cabin;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 28px;
+  color: rgb(255, 255, 255);
+}
+
+.single-washing-process p {
+  font-family: Cabin;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  padding-right: 40px;
+}
+.washing-process {
+  position: relative;
+}
+.washing-process:before {
+  position: absolute;
+  content: "";
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #194788;
+  z-index: -1;
+}
+.single-washing-process {
+  margin-top: 40px;
+}
+.roof-section-title {
+  margin: 40px 0;
+}
+.single-washing-img.second-washing-img {
+  margin-top: 50px;
+}
+.single-washing-img img {
+  position: relative;
+  z-index: -1;
+}
+
+.single-washing-img img:before {
+  position: absolute;
+  width: 90px;
+  height: 91px;
+  left: -25px;
+  top: -35px;
+  background: #333;
+  content: "";
+  border-radius: 50%;
+  z-index: 99;
+}
+.washing-process-images {
+  padding-left: 40px;
+}
+.single-washing-img.second-washing-img {
+  margin-top: 50px;
+  margin-left: 60px;
+}
+.customers-feedback {
+  padding: 90px 0 60px;
+}
+
+.feedback-title h2 {
+  font-family: Cabin;
+  font-weight: 700;
+  font-size: 36px;
+  color: rgb(0, 0, 0);
+}
+
+.feedback-title p {
+  font-family: Cabin;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  color: rgb(0, 0, 0);
+}
+
+.feedback-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.single-feedback img {
+  width: 333px;
+}
+
+.single-feedback.single-right-feedback > img {
+  width: auto;
+}
+
+.single-customer-feedback {
+  margin-top: 30px;
+}
+
+.single-customer-feedback p {
+  font-family: Cabin;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 29px;
+  color: rgb(0, 0, 0);
+}
+
+.single-customer-feedback img {
+  width: 84px;
+}
+
+.single-customer-feedback h5 {
+  font-size: 18px;
+  color: rgb(51, 51, 51);
+  font-family: Cabin;
+  font-weight: 700;
+  font-style: normal;
+  margin: 10px 0;
+}
+.customer-review {
+  width: 228px;
+  height: 228px;
+  margin: 0 auto;
+  background: url(../Images/roof-washing/customar-review.svg) no-repeat scroll
+    center center/cover;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.customer-review h4 {
+  font-family: Cabin;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 36px;
+  color: rgb(255, 255, 255);
+  line-height: 0;
+}
+
+.customer-review img {
+  width: 98px;
+  margin: 8px 0px;
+}
+.customer-content {
+  text-align: center;
+}
+.customer-review p {
+  font-size: 14px;
+  font-family: Cabin;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(255, 255, 255);
+  padding: 0 28px;
+  line-height: 18px;
+}
+.customer-content h3 {
+  text-align: center;
+  font-family: Cabin;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 36px;
+  color: rgb(0, 0, 0);
+  margin: 20px 0;
+}
+a.roof-btn {
+  display: inline-block;
+  border-radius: 3px;
+  width: 364px;
+  height: 75px;
+  line-height: 75px;
+  background: rgba(247, 147, 29, 1);
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: Cabin;
+  text-align: center;
+}
+a.roof-btn {
+  display: inline-block;
+  border-radius: 3px;
+  width: 364px;
+  height: 75px;
+  line-height: 75px;
+  background: rgba(247, 147, 29, 1);
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+  font-family: Cabin;
+  text-align: center;
+}
+
+.customer-help span {
+  caret-color: rgb(95, 101, 114);
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.customer-help p a {
+  color: rgb(51, 51, 51);
+  font-family: Cabin;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 26px;
+}
+
+.customer-help p {
+  margin-top: 22px;
+}
+.single-feedback.single-right-feedback {
+  position: relative;
+}
+
+.single-feedback.single-right-feedback:before {
+  position: absolute;
+  left: -23px;
+  top: 85px;
+  content: "";
+  z-index: 52;
+  width: 3px;
+  height: 625px;
+  background: rgba(240, 240, 240, 1);
+}
+footer.footer-area.roof-washing-footer p {
+  font-family: Cabin;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  color: rgb(136, 136, 136);
+}
+
+footer.footer-area.roof-washing-footer {
+  background: rgba(238, 238, 238, 1);
+  padding: 27px;
+}
 /* Responsive */
 
 @media (min-width: 1200px) {
@@ -616,6 +1058,7 @@ footer.footer-area p {
   footer.footer-area {
     text-align: center;
   }
+  /* Roof washing */
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -787,4 +1230,5 @@ footer.footer-area p {
   footer.footer-area {
     text-align: center;
   }
+  /* Roof washing */
 }
