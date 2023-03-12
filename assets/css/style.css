@@ -530,18 +530,6 @@ footer.footer-area p {
 .roof-hero-content.washing-hero-content {
   padding-top: 36px;
 }
-.roof-hero-area:before {
-  font-size: 28px;
-  color: rgb(255, 255, 255);
-  content: "";
-  width: 55%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: rgb(255, 255, 255, 0.9);
-  z-index: 0;
-}
 
 .roof-hero-content.washing-hero-content {
   z-index: 99;
@@ -552,14 +540,25 @@ footer.footer-area p {
   padding-right: 72px;
 }
 /* roof hero area */
-.roof-hero-area.d-flex.align-items-center {
+.roof-hero-area {
   padding: 95px 0 56px;
-  background: url(https://d9hhrg4mnvzow.cloudfront.net/get.procleanplus.co/washing/897b84f7-power-washing-header_100000000000000000001o.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: url(../Images/our-work/power-washing-bg.jpg) no-repeat scroll top
+    center / cover;
   position: relative;
-  overflow: hidden;
   margin-top: 2px;
+  z-index: 1;
+}
+.roof-hero-area:before {
+  font-size: 28px;
+  color: rgb(255, 255, 255);
+  content: "";
+  width: 55%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgb(255, 255, 255, 0.9);
+  z-index: -1;
 }
 .roof-hero-content h2 {
   font-family: Cabin;
@@ -1103,6 +1102,17 @@ footer.footer-area.roof-washing-footer {
     scroll center center/cover;
   border-radius: 50%;
 }
+/**/
+.modal.popup-modal .modal-dialog.modal-lg {
+  max-width: 946px;
+}
+.modal.popup-modal .modal-dialog button.btn-close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  z-index: 999;
+}
+
 /* Responsive */
 
 @media (min-width: 1200px) {
