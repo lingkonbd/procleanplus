@@ -547,12 +547,13 @@ footer.footer-area p {
 .hero-list p:before {
   position: absolute;
   left: 0;
-  top: 0;
   content: "";
+  top: 0;
   width: 20px;
   height: 20px;
-  background: #333;
-  /* background: url(../Images/roof-washing/list-circle.svg); */
+  /* background: #333; */
+  background: url(../Images/roof-washing/list-circle.svg) no-repeat scroll
+    center center/cover;
   border-radius: 50%;
 }
 
@@ -661,30 +662,8 @@ input.roof-btn {
   width: 100%;
   height: 300px;
 }
-.single-work.see-it-item .see-it-btn a {
-  font-weight: 700;
-  font-family: "Luckiest Guy";
-  font-size: 28px;
-  color: rgb(255, 255, 255);
-  font-style: normal;
-  position: absolute;
-  text-align: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 .see-it .roof-section-title {
   margin-bottom: 100px;
-}
-.single-work.see-it-item .see-it-btn {
-  position: absolute;
-  background: url(../Images/roof-washing/circle-before-after.svg);
-  height: 150px;
-  width: 150px;
-  text-align: center;
-  border-radius: 50%;
-  left: -10px;
-  top: -83px;
 }
 
 .single-work.see-it-item {
@@ -701,8 +680,8 @@ input.roof-btn {
   font-style: normal;
   font-size: 28px;
   color: rgb(255, 255, 255);
+  margin-bottom: 20px;
 }
-
 .single-washing-process p {
   font-family: Cabin;
   font-weight: 400;
@@ -710,6 +689,7 @@ input.roof-btn {
   color: rgb(255, 255, 255);
   font-size: 20px;
   padding-right: 40px;
+  line-height: 29px;
 }
 .washing-process {
   position: relative;
@@ -726,13 +706,13 @@ input.roof-btn {
   z-index: -1;
 }
 .single-washing-process {
-  margin-top: 40px;
+  margin-bottom: 60px;
+}
+.washing-process-content {
+  padding: 80px 0px;
 }
 .roof-section-title {
   margin: 40px 0;
-}
-.single-washing-img.second-washing-img {
-  margin-top: 50px;
 }
 .single-washing-img img {
   position: relative;
@@ -752,15 +732,18 @@ input.roof-btn {
 }
 .washing-process-images {
   padding-left: 40px;
+  margin-top: 25px;
 }
 .single-washing-img.second-washing-img {
-  margin-top: 50px;
-  margin-left: 60px;
+  margin: 40px 60px 40px;
 }
+
 .customers-feedback {
   padding: 90px 0 60px;
 }
-
+.customers-feedback .feedback-title {
+  margin-bottom: 70px;
+}
 .feedback-title h2 {
   font-family: Cabin;
   font-weight: 700;
@@ -790,7 +773,7 @@ input.roof-btn {
 }
 
 .single-customer-feedback {
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .single-customer-feedback p {
@@ -911,7 +894,7 @@ a.roof-btn {
 .single-feedback.single-right-feedback:before {
   position: absolute;
   left: -23px;
-  top: 85px;
+  top: 120px;
   content: "";
   z-index: 52;
   width: 3px;
@@ -931,6 +914,14 @@ footer.footer-area.roof-washing-footer {
   padding: 27px;
 }
 /* pressure washing */
+.roof-hero-content.washing-hero-content p {
+  line-height: 32px;
+  font-size: 28px;
+}
+.roof-hero-content.washing-hero-content h2 {
+  font-size: 50px;
+  padding-right: 30px;
+}
 /* our work */
 .work-title h2 {
   font-family: Cabin;
@@ -984,15 +975,64 @@ footer.footer-area.roof-washing-footer {
   background: url(../Images/our-work/our-work-btn-bg.svg) no-repeat scroll
     center center/cover;
   padding: 55px;
-  margin: 30px 0 0;
+  margin: 35px 0 0;
 }
 /* Our Power Washing Services */
-
-.single-washing-img {
-  width: fit-content;
-  position: relative;
+.customers-feedback.washing-service-feedback .single-customer-feedback {
+  margin-top: 40px;
+}
+.customers-feedback.washing-service-feedback .feedback-title {
+  margin-bottom: 60px;
+}
+.customers-feedback.washing-service-feedback .feedback-title h2 {
+  font-family: Cabin;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 48px;
+  color: rgb(0, 0, 0);
+}
+.washing-service-images .single-washing-img.second-washing-img {
+  margin: 40px 60px 40px;
+}
+.washing-service-images {
+  padding: 20px 0;
+  padding-left: 40px;
+}
+.single-washing-service h3 {
+  font-family: Cabin;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 28px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 20px;
 }
 
+.washing-service-content .single-washing-service p {
+  font-family: Cabin;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  line-height: 29px;
+  padding-right: 40px;
+}
+
+.washing-service-content .single-washing-service {
+  margin-bottom: 70px;
+}
+.washing-service-images .single-washing-img img {
+  max-width: 375px;
+  max-height: 240px;
+  height: 240px;
+  width: 375px;
+}
+.single-washing-img {
+  position: relative;
+  max-width: 375px;
+  max-height: 240px;
+  height: 240px;
+  width: 375px;
+}
 .single-washing-img:before {
   position: absolute;
   left: -35px;
@@ -1146,7 +1186,96 @@ footer.footer-area.roof-washing-footer {
   footer.footer-area {
     text-align: center;
   }
+
   /* Roof washing */
+  .roof-head-right img {
+    width: 54px;
+  }
+  .single-washing-img.second-washing-img {
+    margin: 65px 0px 0;
+  }
+  .roof-hero-content h2 {
+    font-size: 44px;
+  }
+  .roof-hero-content > p {
+    font-size: 20px;
+    margin: 22px 0;
+  }
+
+  .hero-list p {
+    font-size: 18px;
+  }
+
+  .roof-washing-form p {
+    font-size: 13px;
+    line-height: 21px;
+  }
+
+  .washing-process-images .single-washing-img.second-washing-img {
+    margin: 30px 28px 0;
+  }
+
+  .washing-process-images .single-washing-img {
+    position: relative;
+    max-width: 270px;
+    max-height: 210px;
+    height: 210px;
+    width: 270px;
+  }
+  .washing-process-images .single-washing-img:before {
+    left: -24px;
+    top: -25px;
+    width: 60px;
+    height: 60px;
+  }
+  .washing-process-images .single-washing-img:after {
+    right: -35px;
+    content: "";
+    bottom: 6px;
+    width: 60px;
+    height: 60px;
+  }
+  .clean-work .single-work:before {
+    left: -10px;
+    top: -50px;
+    width: 90px;
+    height: 90px;
+    font-size: 20px;
+  }
+  .see-it .roof-section-title {
+    margin: 0px 0 70px;
+  }
+  .roof-section-title h2 {
+    font-size: 30px;
+    margin-bottom: 32px;
+  }
+  .clean-work.see-it.py-50 .single-work {
+    margin-bottom: 40px;
+  }
+  .washing-process .single-washing-process h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .washing-process .washing-process-content {
+    padding: 30px 0px;
+  }
+  .washing-process .single-washing-process {
+    margin-bottom: 35px;
+  }
+  .washing-process .single-washing-process p {
+    padding-right: 0;
+    font-size: 18px;
+  }
+  .feedback-title h2 {
+    font-size: 25px;
+  }
+  .feedback-title p {
+    font-size: 22px;
+  }
+  .single-feedback img {
+    width: 280px;
+  }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
@@ -1261,14 +1390,14 @@ footer.footer-area.roof-washing-footer {
     right: 14px;
     margin-left: auto;
   }
-  .single-work {
+  .single-clean-work {
     padding: 0 20px;
   }
   .testimonial-area {
     position: relative;
     padding: 100px 0 20px;
   }
-  .single-work img {
+  .single-clean-work img {
     height: 400px;
     width: 100%;
   }
@@ -1319,4 +1448,172 @@ footer.footer-area.roof-washing-footer {
     text-align: center;
   }
   /* Roof washing */
+  .roof-head-right img {
+    display: none;
+  }
+  .roof-hero-area.d-flex.align-items-center {
+    padding: 40px 0 15px;
+    background: #fff;
+    margin-top: 2px;
+  }
+  .roof-hero-content h2 {
+    font-size: 40px;
+  }
+  .roof-hero-content > p {
+    font-size: 23px;
+    margin: 20px 0;
+  }
+
+  .hero-list p:before {
+    top: 3px;
+  }
+
+  .roof-washing-form {
+    background: #fff;
+  }
+
+  .roof-washing-form p {
+    font-size: 21px;
+    margin-bottom: 20px;
+  }
+  .clean-work.see-it.py-50 {
+    padding: 0px 0;
+  }
+
+  .clean-work .single-work:before {
+    left: -10px;
+    top: -45px;
+    width: 75px;
+    height: 75px;
+    font-size: 18px;
+  }
+  .clean-work.see-it.py-50 .single-work {
+    padding-left: 8px;
+  }
+  .single-work.single-work2 {
+    margin-top: -90px;
+    margin-left: 119px;
+    margin-bottom: 0;
+  }
+  .clean-work .single-work img {
+    width: 230px;
+  }
+  .single-work.single-work2:before {
+    content: "After";
+    right: 22px !important;
+  }
+  .see-it .roof-section-title {
+    margin: 5px 0 50px;
+  }
+  .customers-feedback .feedback-title {
+    margin-bottom: 45px;
+  }
+  .roof-section-title h2 {
+    font-size: 28px;
+  }
+  .washing-process:before {
+    width: 100%;
+  }
+  .single-washing-process p {
+    font-size: 18px;
+    padding-right: 0;
+    line-height: 28px;
+  }
+  .single-washing-process h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  .single-washing-process {
+    margin-bottom: 30px;
+  }
+  .washing-process-content {
+    padding: 80px 0px 20px;
+  }
+
+  .washing-process-images .single-washing-img {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .single-washing-img.first-washing-img {
+    margin-bottom: 45px;
+  }
+  .washing-process {
+    position: relative;
+    padding-bottom: 60px;
+  }
+  .washing-process-images {
+    padding-left: 0;
+    margin-top: 0;
+    padding: 0 25px;
+  }
+  .washing-process-images .single-washing-img:before {
+    left: -30px;
+    content: "";
+    top: -25px;
+    width: 65px;
+    height: 65px;
+  }
+
+  .washing-process-images .single-washing-img:after {
+    position: absolute;
+    right: -30px;
+    content: "";
+    bottom: -25px;
+    width: 65px;
+    height: 65px;
+  }
+  .customers-feedback {
+    padding: 50px 0 35px;
+  }
+  .feedback-title h2 {
+    font-size: 28px;
+    padding: 0 25px;
+  }
+  .feedback-title p {
+    font-size: 18px;
+  }
+  .single-customer-feedback {
+    margin-top: 30px;
+  }
+  .single-feedback img {
+    width: 240px;
+  }
+  .single-feedback.single-right-feedback {
+    margin-top: 40px;
+  }
+  .customer-review {
+    width: 200px;
+    height: 200px;
+  }
+  .customer-content h3 br {
+    display: none;
+  }
+  .customer-content h3 {
+    font-size: 26px;
+    margin: 10px 0 15px;
+  }
+  .customer-help p a {
+    font-size: 18px;
+  }
+  a.roof-btn {
+    width: 100%;
+    height: 52px;
+    line-height: 52px;
+    font-size: 18px;
+  }
+  .customer-review h4 {
+    font-size: 28px;
+  }
+  .customer-review img {
+    width: 98px;
+    margin: 4px 0px;
+  }
+  .customer-review p {
+    font-size: 12px;
+    padding: 0px 27px;
+    line-height: 18px;
+  }
+  .customer-help p {
+    margin-top: 6px;
+  }
 }
