@@ -46,7 +46,8 @@
         <div class="row">
           <div class="col-md-6">
             <div class="hero-content">
-              <h2>Affordable <span id="service">Gutter Cleaning</span> Services in Springfield & the Surrounding Areas</h2>
+              <h2>Affordable <span id="service">Gutter Cleaning</span> Services in Springfield & the Surrounding Areas
+              </h2>
               <p>Gutter cleaning services that are <strong>done right the first time.</strong> Trust your gutters to our
                 decades of experience.</p>
               <div class="hero-btn">
@@ -395,28 +396,28 @@
 
 
   <script>
-		// Get the URL parameters as a string
-		var paramsString = window.location.search;
+    // Get the URL parameters as a string
+    var paramsString = window.location.search;
 
-		// Convert the parameters string to an object
-		var params = new URLSearchParams(paramsString);
+    // Convert the parameters string to an object
+    var params = new URLSearchParams(paramsString);
 
-		// Get the values of the parameters
-		var service = params.get('service');
-		var location = params.get('location');
-		var background = params.get('background');
-		var phone = params.get('phone');
+    // Get the values of the parameters
+    var service = params.get('service');
+    var location = params.get('location');
+    var background = params.get('background');
+    var phone = params.get('phone');
 
-		// Update the content of the webpage
-		document.getElementById('service').innerText = service;
-		document.getElementById('location').innerText = location;
-		document.getElementById('phone').innerText = phone;
+    // Update the content of the webpage
+    document.getElementById('service').innerText = service;
+    document.getElementById('location').innerText = location;
+    document.getElementById('phone').innerText = phone;
 
-		// Update the background image of the webpage
-		if (background) {
-			document.body.style.backgroundImage = 'url(' + background + ')';
-		}
-	</script>
+    // Update the background image of the webpage
+    if (background) {
+      document.body.style.backgroundImage = 'url(' + background + ')';
+    }
+  </script>
 </body>
 
 </html>
