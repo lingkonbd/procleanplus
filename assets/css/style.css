@@ -511,10 +511,55 @@ footer.footer-area p {
   text-decoration: none;
   margin-right: 0;
 }
+.washing-service-content {
+  margin-top: 0;
+}
+
+.roof-hero-area.washing-hero {
+  padding: 95px 0 56px;
+  background: url(https://d9hhrg4mnvzow.cloudfront.net/get.procleanplus.co/washing/897b84f7-power-washing-header_1000000…o.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.roof-hero-area.washing-hero:before {
+  position: absolute;
+  left: 0;
+}
+.roof-hero-content.washing-hero-content {
+  padding-top: 36px;
+}
+.roof-hero-area:before {
+  font-size: 28px;
+  color: rgb(255, 255, 255);
+  content: "";
+  width: 55%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgb(255, 255, 255, 0.9);
+  z-index: 0;
+}
+
+.roof-hero-content.washing-hero-content {
+  z-index: 99;
+  position: relative;
+}
+
+.roof-hero-content.washing-hero-content p {
+  padding-right: 72px;
+}
 /* roof hero area */
 .roof-hero-area.d-flex.align-items-center {
   padding: 95px 0 56px;
-  background: #ddd;
+  background: url(https://d9hhrg4mnvzow.cloudfront.net/get.procleanplus.co/washing/897b84f7-power-washing-header_100000000000000000001o.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  margin-top: 2px;
 }
 .roof-hero-content h2 {
   font-family: Cabin;
@@ -1188,18 +1233,39 @@ footer.footer-area.roof-washing-footer {
   }
 
   /* Roof washing */
+  .roof-hero-content h2 {
+    font-size: 38px;
+  }
   .roof-head-right img {
-    width: 54px;
+    width: 54px !important;
+  }
+  .roof-logo img {
+    width: 235px !important;
+  }
+  .customers-feedback .single-customer-feedback img {
+    width: 90px;
+  }
+  .roof-hero-area.d-flex.align-items-center {
+    padding: 60px 0 35px;
+  }
+  .roof-washing-form .roof-washing-form .form-group {
+    margin-bottom: 10px;
+  }
+  input.roof-btn {
+    height: 54px;
+    line-height: 54px;
+    font-size: 20px;
   }
   .single-washing-img.second-washing-img {
     margin: 65px 0px 0;
   }
-  .roof-hero-content h2 {
-    font-size: 44px;
-  }
   .roof-hero-content > p {
-    font-size: 20px;
-    margin: 22px 0;
+    font-size: 17px;
+    margin: 16px 0;
+    line-height: 27px;
+  }
+  .hero-list p {
+    font-size: 16px;
   }
 
   .hero-list p {
@@ -1209,8 +1275,11 @@ footer.footer-area.roof-washing-footer {
   .roof-washing-form p {
     font-size: 13px;
     line-height: 21px;
+    padding-top: 12px;
   }
-
+  .washing-service-content {
+    margin-top: 60px;
+  }
   .washing-process-images .single-washing-img.second-washing-img {
     margin: 30px 28px 0;
   }
@@ -1250,10 +1319,19 @@ footer.footer-area.roof-washing-footer {
     margin-bottom: 32px;
   }
   .clean-work.see-it.py-50 .single-work {
-    margin-bottom: 40px;
+    margin-bottom: 0px;
+  }
+  .clean-work.see-it.py-50 {
+    padding: 30px 0;
+  }
+  .roof-section-title {
+    margin-bottom: 15px;
+  }
+  .washing-process-images {
+    padding-left: 20px;
   }
   .washing-process .single-washing-process h3 {
-    font-size: 24px;
+    font-size: 22px;
     margin-bottom: 15px;
   }
 
@@ -1265,7 +1343,7 @@ footer.footer-area.roof-washing-footer {
   }
   .washing-process .single-washing-process p {
     padding-right: 0;
-    font-size: 18px;
+    font-size: 16px;
   }
   .feedback-title h2 {
     font-size: 25px;
@@ -1276,12 +1354,93 @@ footer.footer-area.roof-washing-footer {
   .single-feedback img {
     width: 280px;
   }
+  .customers-feedback .feedback-title {
+    margin-bottom: 50px;
+  }
+  /* power washing service page */
+  .roof-hero-content.washing-hero-content h2 {
+    font-size: 28px;
+    padding-right: 18px;
+  }
+  .roof-hero-content.washing-hero-content p {
+    line-height: 27px;
+    font-size: 18px;
+  }
+  .washing-hero-form.roof-washing-form .form-group {
+    margin-bottom: 10px;
+  }
+  .our-work-area .single-work:before {
+    left: -38px;
+    top: -46px;
+    width: 80px;
+    height: 80px;
+    font-size: 20px;
+  }
+  .our-work-area .single-work {
+    margin-bottom: 40px;
+  }
+  .washing-service-feedback .customer-content h3 {
+    font-size: 25px;
+  }
+  .washing-service-images .single-washing-img img {
+    max-width: 375px;
+    max-height: 240px;
+    height: 240px;
+    width: 100%;
+  }
+  .single-washing-img.first-washing-img .single-washing-img {
+    width: 100%;
+  }
+  .washing-service-images .single-washing-img.second-washing-img {
+    margin: 40px 60px 40px;
+    margin-left: 0;
+  }
+  .washing-service-content .single-washing-service {
+    margin-bottom: 30px;
+  }
+  .single-washing-service h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  .customers-feedback.washing-service-feedback .feedback-title h2 br {
+    display: none;
+  }
+
+  .customers-feedback.washing-service-feedback .feedback-title h2 {
+    font-family: Cabin;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 38px;
+    color: rgb(0, 0, 0);
+  }
+  .single-customer-feedback p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .customers-feedback.washing-service-feedback .single-customer-feedback {
+    margin-top: 30px;
+  }
+  .roof-washing-form {
+    padding: 0 20px;
+  }
+  .washing-process.power-washing-service .single-washing-img {
+    width: 100%;
+  }
+  .single-feedback.single-right-feedback:before {
+    left: -12px;
+  }
+  .roof-hero-content.washing-hero-content {
+    padding-top: 20px;
+  }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
 }
 
 @media (max-width: 575px) {
+  .roof-hero-content.washing-hero-content {
+    padding-top: 0px;
+  }
   a.btn-primary.desktop-btn {
     display: none;
   }
@@ -1565,6 +1724,9 @@ footer.footer-area.roof-washing-footer {
   .customers-feedback {
     padding: 50px 0 35px;
   }
+  .customers-feedback .single-customer-feedback img {
+    width: 90px;
+  }
   .feedback-title h2 {
     font-size: 28px;
     padding: 0 25px;
@@ -1615,5 +1777,133 @@ footer.footer-area.roof-washing-footer {
   }
   .customer-help p {
     margin-top: 6px;
+  }
+  /* power washing page */
+  .our-work-area {
+    padding: 20px 0 20px;
+  }
+  .our-work-area .single-work.single-work2 {
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  .row.double-img .single-work img {
+    height: 215px;
+  }
+  .washing-service-images .single-washing-img.second-washing-img {
+    margin: 40px 60px 40px;
+    margin-left: 0;
+  }
+  .washing-service-images {
+    padding-left: 0;
+  }
+  .customers-feedback.washing-service-feedback .feedback-title h2 br {
+    display: none;
+  }
+
+  .customers-feedback.washing-service-feedback .feedback-title h2 {
+    font-size: 32px;
+    padding: 0;
+  }
+  .washing-service-content .washing-service-content {
+    padding-top: 40px;
+  }
+  .washing-service-content .single-washing-service h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
+  .washing-service-content .single-washing-service p {
+    font-size: 16px;
+    line-height: 26px;
+    padding-right: 10px;
+  }
+  .washing-service-content .single-washing-service {
+    margin-bottom: 30px;
+  }
+  .our-work-area .single-work.single-work2 {
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  .our-work-area .single-work:before {
+    left: -10px;
+    top: -42px;
+    width: 85px;
+    height: 85px;
+    font-size: 18px;
+  }
+  .customers-feedback.washing-service-feedback .feedback-title h2 br {
+    display: none;
+  }
+
+  .washing-service-content {
+    padding-top: 40px;
+  }
+
+  .row.double-img .single-work img {
+    height: 240px;
+  }
+
+  .row.double-img .single-work {
+    margin: 0;
+  }
+
+  .row.double-img .col-md-6 {
+    width: 50%;
+  }
+
+  .row.double-img {
+    margin-top: 50px;
+  }
+  .washing-service-images .single-washing-img:before {
+    left: -15px;
+    top: -25px;
+    width: 60px;
+    height: 60px;
+  }
+  .washing-service-images .single-washing-img:after {
+    right: -15px;
+    bottom: -25px;
+    width: 60px;
+    height: 60px;
+  }
+  .roof-hero-content.washing-hero-content h2 {
+    font-size: 32px;
+    padding-right: 0;
+  }
+  .roof-hero-content.washing-hero-content p {
+    line-height: 30px;
+    font-size: 20px;
+    margin-top: 0;
+  }
+  input.roof-btn {
+    font-size: 18px;
+    width: 100%;
+    height: 52px;
+    line-height: 52px;
+  }
+  .roof-washing-form .form-group {
+    margin-bottom: 10px;
+  }
+  .roof-washing-form.washing-hero-form .roof-washing-form p {
+    font-size: 19px;
+    margin-bottom: 20px;
+  }
+  .work-title h2 {
+    margin-bottom: 20px;
+  }
+  .our-work-area {
+    padding: 10px 0 30px;
+  }
+  .work-title h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+  }
+  .row.double-img .single-work.single-work2 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .roof-hero-area.washing-hero:before {
+    width: 100%;
   }
 }
