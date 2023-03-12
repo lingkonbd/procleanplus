@@ -30,9 +30,9 @@
           <div class="d-flex align-items-center justify-content-end">
             <p class="call-info m-0 align-self-end">
               <span>Give us a call at</span>
-              <a href="tel:+8602003479">860.200.3479</a>
+              <a href="tel:+8602003479" class="phone-link">860.200.3479</a>
             </p>
-            <a class="btn-primary desktop-btn" href="">REQUEST FREE ESTIMATE</a>
+            <a class="btn-primary desktop-btn" data-bs-toggle="modal" href="#formModal">REQUEST FREE ESTIMATE</a>
             <a class="btn-primary mobile-btn" href="tel:+8602003479">CLICK TO CALL</a>
           </div>
         </div>
@@ -46,19 +46,19 @@
         <div class="row">
           <div class="col-md-6">
             <div class="hero-content">
-              <h2>Affordable <span id="service">Gutter Cleaning</span> Services in Springfield & the Surrounding Areas
-              </h2>
+              <h2>Affordable <span id="service">Gutter Cleaning</span> Services in <span id="city">Springfield</span> &
+                the Surrounding Areas</h2>
               <p>Gutter cleaning services that are <strong>done right the first time.</strong> Trust your gutters to our
                 decades of experience.</p>
               <div class="hero-btn">
                 <div class="cta-btn">
-                  <a class="" href="">
+                  <a class="" data-bs-toggle="modal" href="#formModal">
                     REQUEST YOUR FREE ESTIMATE
                   </a>
                 </div>
                 <p>
                   <span> or give us a call at </span>
-                  <a href="tel:+8602003479">860.200.3479</a>
+                  <a href="tel:+8602003479" class="phone-link">860.200.3479</a>
                 </p>
               </div>
 
@@ -363,19 +363,17 @@
           <div class="col">
             <h2>Request your free gutter cleaning estimate today</h2>
             <div class="cta-btn">
-              <a class="" href=""> REQUEST YOUR FREE ESTIMATE </a>
+              <a class="" data-bs-toggle="modal" href="#formModal"> REQUEST YOUR FREE ESTIMATE </a>
             </div>
             <p>
               <span> or give us a call at </span>
-              <a href="tel:+8602003479">860.200.3479</a>
+              <a href="tel:+8602003479" class="phone-link">860.200.3479</a>
             </p>
           </div>
         </div>
       </div>
     </div>
   </main>
-
-
 
   <footer class="footer-area">
     <div class="container">
@@ -384,39 +382,125 @@
     </div>
   </footer>
 
-
-
-
-
-
-
-
+  <!-- Vertically centered scrollable modal -->
+  <div class="modal fade popup-modal" id="formModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+      <div class="modal-content">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-body">
+          <!-- modal grid -->
+          <div class="row modal-grid">
+            <div class="col-lg-6 estimonial-qoute">
+              <p>Great service! Clear communication , great follow up, very simple transaction and reasonably priced. I
+                would recommend their service to family and friends! Thanks!!!</p>
+              <span class="author-name">- Jene D</span>
+            </div>
+            <div class="col-lg-6 popup-qoute-form">
+              <h4>Please submit your contact details and one of our experts will get back to you shortly.</h4>
+              <form id="quote-form" method="post">
+                <div class="form-group">
+                  <label for="yourName">Name</label>
+                  <input type="text" name="name" id="yourName" class="form-control" required>
+                </div>
+                <div class="form-group">
+                  <label for="yourEmail">Email</label>
+                  <input type="email" name="email" id="yourEmail" class="form-control" required>
+                </div>
+                <div class="form-group">
+                  <label for="service">Service</label>
+                  <select name="service" id="service" required>
+                    <option value="">Choose Service</option>
+                    <option value="Gutter Cleaning">Gutter Cleaning</option>
+                    <option value="Gutter Cleaning & Repair">Gutter Cleaning & Repair</option>
+                  </select>
+                </div>
+                <button type="submit" id="submit-btn">Request My Free Quote</button>
+                <div class="form-bottom">
+                  <p>Your information is 100% secure</p>
+                  <h4>Or call us at 860.200.3479</h4>
+                </div>
+              </form>
+            </div>
+          </div><!-- modal grid -->
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/form.js"></script>
 
 
   <script>
     // Get the URL parameters as a string
-    var paramsString = window.location.search;
+    let paramsString = window.location.search;
 
     // Convert the parameters string to an object
-    var params = new URLSearchParams(paramsString);
+    let params = new URLSearchParams(paramsString);
 
     // Get the values of the parameters
-    var service = params.get('service');
-    var location = params.get('location');
-    var background = params.get('background');
-    var phone = params.get('phone');
+    let service = params.get('service');
+    let city = params.get('city');
+    let phone = params.get('phone');
 
-    // Update the content of the webpage
-    document.getElementById('service').innerText = service;
-    document.getElementById('location').innerText = location;
-    document.getElementById('phone').innerText = phone;
+    // Get the anchor tag element by ID
+    let serviceTitle = document.getElementById('service');
+    let cityName = document.getElementById('city');
+    let phoneLinks = document.querySelectorAll('.phone-link');
 
-    // Update the background image of the webpage
-    if (background) {
-      document.body.style.backgroundImage = 'url(' + background + ')';
+    // Set the default phone number and remove dots
+    let defaultPhone = '860.200.3479';
+    let defaultServiceText = 'Gutter Cleaning';
+    let defaultCityName = 'Springfield';
+    let defaultPhoneFormatted = defaultPhone.replace(/\./g, '');
+
+
+
+    /* 	var location = params.get('location');
+      var background = params.get('background');
+      var phone = params.get('phone'); */
+
+
+    // Update the href and link text of the anchor tag
+
+    if (service) {
+      // Use Service title from URL parameter
+      serviceTitle.innerText = service;
+    } else {
+      // Use default service title
+      serviceTitle.innerText = defaultServiceText;
     }
+
+    if (city) {
+      // Use city name from URL parameter
+      cityName.innerText = city;
+    } else {
+      // Use default content
+      cityName.innerText = defaultCityName;
+    }
+
+    for (let i = 0; i < phoneLinks.length; i++) {
+      let phoneLink = phoneLinks[i];
+      if (phone) {
+        // Use phone number from URL parameter and remove dots
+        let phoneFormatted = phone.replace(/\./g, '');
+        phoneLink.href = 'tel:' + phoneFormatted;
+        phoneLink.innerText = phone;
+      } else {
+        // Use default phone number and remove dots
+        phoneLink.href = 'tel:' + defaultPhoneFormatted;
+        phoneLink.innerText = defaultPhone;
+      }
+    }
+
+
+    /* 		document.getElementById('location').innerText = location;
+        document.getElementById('phone').innerText = phone; */
+
+		// Update the background image of the webpage
+    /* 	if (background) {
+        document.body.style.backgroundImage = 'url(' + background + ')';
+      } */
   </script>
 </body>
 
