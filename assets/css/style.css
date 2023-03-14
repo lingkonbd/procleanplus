@@ -2104,7 +2104,9 @@ button#submit-btn {
     font-size: 18px;
     line-height: 52px;
   }
-  .form-bottom h4 {
-    font-size: 22px;
+  .popup-qoute-form {
+    padding: 25px;
+    width: 100%;
+    max-width: 100%;
   }
 }
